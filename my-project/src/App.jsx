@@ -4,10 +4,10 @@ import Post from "./assets/P.svg";
 
 function App() {
   return (
-    //coulum 1st//
-    <div className="absolute inset-0 bg-gray-100 p-6 flex justify-center items-center">
-      <div className="bg-white shadow-lg rounded-lg p-4 lg:p-6 flex flex-col lg:flex-row w-full max-w-7xl h-full">
+    <div className="bg-gray-100 flex justify-center items-center min-h-screen p-6"> {/* Center the main div */}
+      <div className="bg-white shadow-lg rounded-lg p-4 lg:p-6 flex flex-col lg:flex-row w-full max-w-7xl"> {/* Main container */}
 
+        {/* Column 1 */}
         <div className="w-full lg:w-1/4 p-4 lg:p-4 border-b lg:border-r flex flex-col items-center mb-6 lg:mb-0">
           <img
             src={Badge}
@@ -19,18 +19,17 @@ function App() {
             <h2 className="text-gray-500 text-xl lg:text-3xl font-semibold mb-6 text-center">
               Badge Details
             </h2>
-            <h3 className="text-gray-500 text-xl lg:text-base font-bold tracking-widest mb-4  text-center">
+            <h3 className="text-gray-500 text-xl lg:text-base font-bold tracking-widest mb-4 text-center">
               EARNING CRITERIA
             </h3>
-            <ul className="list-disc list-inside text-gray-600 text-sm lg:text-sm text-center	">
+            <ul className="list-disc list-inside text-gray-600 text-sm lg:text-sm text-center">
               <li>User must complete the earning criteria to earn this badge</li>
             </ul>
           </div>
         </div>
 
-
-        {/* column 2 */}
-        <div className="w-full lg:w-1/2 p-4 lg:p-4 overflow-y-auto">
+        {/* Column 2 */}
+        <div className="w-full lg:w-1/2 p-4 lg:p-4">
           <h1 className="text-2xl lg:text-3xl text-gray-600 font-bold mb-4">
             Postman API Fundamentals Student Expert
           </h1>
@@ -57,27 +56,24 @@ function App() {
           </ul>
         </div>
 
-
-        {/* column 3 */}
+        {/* Column 3 */}
         <div className="w-full lg:w-1/4 p-4 lg:p-4 flex flex-col items-center">
-          <button className="bg-gradient-to-r from-gray-700 to-gray-900 text-white px-4 py-2 rounded-full shadow-md hover:from-gray-800 hover:to-gray-900 transition duration-300 text-xs lg:text-sm font-medium mb-12">
+          <button className="bg-gradient-to-r from-gray-700 to-gray-900 mr-2 text-white px-4 py-2 rounded-full shadow-md hover:from-gray-800 hover:to-gray-900 transition duration-300 text-xs lg:text-sm font-medium mb-6 lg:mb-12">
             Share
           </button>
 
-          <div className="text-center mb-6 lg:mb-12 ">
+          <div className="text-center mb-6 lg:mb-12">
             <img
               src={Post}
               alt="Postman Logo"
-              className="w-12 h-12 lg:w-12 lg:h-12 mb-4 ml-12"
+              className="w-12 h-12 lg:w-12 lg:h-12 mb-4 ml-14"
             />
             <button className="bg-gradient-to-r from-gray-700 to-gray-900 text-white px-4 py-2 rounded-full shadow-md hover:from-gray-800 hover:to-gray-900 transition duration-300 text-xs lg:text-sm font-medium">
               Offered by: Postman
             </button>
-
-
           </div>
 
-          <div className="flex flex-wrap gap-2 justify-center mt-0">
+          <div className="flex flex-wrap gap-2 justify-center">
             <span className="bg-gray-200 text-gray-700 rounded-full px-3 py-1 text-xs lg:text-sm">api</span>
             <span className="bg-gray-200 text-gray-700 rounded-full px-3 py-1 text-xs lg:text-sm">testing</span>
             <span className="bg-gray-200 text-gray-700 rounded-full px-3 py-1 text-xs lg:text-sm">scripting</span>
